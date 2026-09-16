@@ -1,0 +1,13 @@
+name: foodlens-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch==2.2.2+cpu
+      - torchvision==0.17.2+cpu
+      - pillow
+      - numpy<2          # torch 2.2.2 est compilé contre numpy 1.x : numpy 2.x casse torch.from_numpy()
+      - azureml-inference-server-http

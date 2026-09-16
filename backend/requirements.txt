@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+azure-cognitiveservices-vision-computervision
+azure-identity
+azure-keyvault-secrets
+httpx
+pillow

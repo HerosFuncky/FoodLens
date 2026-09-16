@@ -1,0 +1,38 @@
+/* Tokens "Nuit cuisine" + base globale */
+:root {
+  --espresso: #1C1714;  /* fond */
+  --brou:     #261E1A;  /* surfaces, panneau conseil */
+  --creme:    #ECE3D2;  /* texte */
+  --safran:   #E7A33A;  /* accent principal, CTA, arc glucides */
+  --tomate:   #D9533B;  /* lipides, dépassement de budget */
+  --olive:    #6E7355;  /* réserve */
+  --argile:   #9C8B76;  /* labels */
+
+  --font-title: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body:  "Schibsted Grotesk", system-ui, "Segoe UI", sans-serif;
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--espresso);
+  color: var(--creme);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, p { margin: 0; }
+button { font-family: inherit; cursor: pointer; color: inherit; }
+
+:focus-visible { outline: 2px solid var(--safran); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

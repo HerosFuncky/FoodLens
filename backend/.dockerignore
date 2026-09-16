@@ -1,0 +1,15 @@
+# Secrets : ne jamais embarquer dans l'image (passés au runtime via --env-file / -e)
+.env
+
+# Caches Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Modèle local lourd (le conteneur utilise l'endpoint Azure, pas le model.pt local)
+local_model/
+
+# Inutile dans l'image
+data/
+*.md
+services/test_*.py
